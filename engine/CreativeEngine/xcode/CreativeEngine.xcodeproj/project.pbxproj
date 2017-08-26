@@ -32,7 +32,6 @@
 		06F4EDFB1F51F1AA00CDB933 /* libBulletInverseDynamics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F4EDDE1F51EFCE00CDB933 /* libBulletInverseDynamics.a */; };
 		06F4EDFC1F51F1AA00CDB933 /* libBulletSoftBody.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F4EDE41F51EFCF00CDB933 /* libBulletSoftBody.a */; };
 		06F4EDFD1F51F1AA00CDB933 /* libLinearMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F4EDE01F51EFCF00CDB933 /* libLinearMath.a */; };
-		06F4EDFE1F51F1B300CDB933 /* libfmodex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 060B1FB61F4B818900EAE9C8 /* libfmodex.dylib */; };
 		06F4EDFF1F51F1B300CDB933 /* libassimp.4.0.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 060B1FB71F4B819300EAE9C8 /* libassimp.4.0.1.dylib */; };
 		06FF1AA71F4CB2FC00A5E41C /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 06FF1AA61F4CB2EB00A5E41C /* assets */; };
 		0986805A658140E1889A4ACC /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = C62C09A134EF4B5B92BC5205 /* CinderApp.icns */; };
@@ -98,7 +97,6 @@
 			files = (
 				006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */,
 				006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */,
-				06F4EDFE1F51F1B300CDB933 /* libfmodex.dylib in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				06F4EDF81F51F1AA00CDB933 /* libBullet3OpenCL_clew.a in Frameworks */,
 				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
