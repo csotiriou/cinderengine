@@ -11,8 +11,8 @@
 #include "cinder/ip/Checkerboard.h"
 #include <vector>
 
-using namespace cinder;
 
+using namespace cinder;
 
 
 class Drawable {

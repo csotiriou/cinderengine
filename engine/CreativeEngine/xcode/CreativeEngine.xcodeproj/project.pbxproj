@@ -21,6 +21,19 @@
 		06F4EB981F51D29900CDB933 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F4EB901F51D28800CDB933 /* main.m */; };
 		06F4EB991F51D29C00CDB933 /* Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06F4EB921F51D28800CDB933 /* Drawable.cpp */; };
 		06F4EB9A1F51D29C00CDB933 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06F4EB941F51D28800CDB933 /* Scene.cpp */; };
+		06F4EDF31F51F10100CDB933 /* libBullet3Geometry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F4EDE31F51EFCF00CDB933 /* libBullet3Geometry.a */; };
+		06F4EDF41F51F19B00CDB933 /* libBullet3Dynamics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F4EDDB1F51EFCE00CDB933 /* libBullet3Dynamics.a */; };
+		06F4EDF51F51F1AA00CDB933 /* libBullet2FileLoader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F4EDDC1F51EFCE00CDB933 /* libBullet2FileLoader.a */; };
+		06F4EDF61F51F1AA00CDB933 /* libBullet3Collision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F4EDE11F51EFCF00CDB933 /* libBullet3Collision.a */; };
+		06F4EDF71F51F1AA00CDB933 /* libBullet3Common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F4EDE51F51EFCF00CDB933 /* libBullet3Common.a */; };
+		06F4EDF81F51F1AA00CDB933 /* libBullet3OpenCL_clew.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F4EDE21F51EFCF00CDB933 /* libBullet3OpenCL_clew.a */; };
+		06F4EDF91F51F1AA00CDB933 /* libBulletCollision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F4EDDF1F51EFCE00CDB933 /* libBulletCollision.a */; };
+		06F4EDFA1F51F1AA00CDB933 /* libBulletDynamics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F4EDDD1F51EFCE00CDB933 /* libBulletDynamics.a */; };
+		06F4EDFB1F51F1AA00CDB933 /* libBulletInverseDynamics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F4EDDE1F51EFCE00CDB933 /* libBulletInverseDynamics.a */; };
+		06F4EDFC1F51F1AA00CDB933 /* libBulletSoftBody.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F4EDE41F51EFCF00CDB933 /* libBulletSoftBody.a */; };
+		06F4EDFD1F51F1AA00CDB933 /* libLinearMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F4EDE01F51EFCF00CDB933 /* libLinearMath.a */; };
+		06F4EDFE1F51F1B300CDB933 /* libfmodex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 060B1FB61F4B818900EAE9C8 /* libfmodex.dylib */; };
+		06F4EDFF1F51F1B300CDB933 /* libassimp.4.0.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 060B1FB71F4B819300EAE9C8 /* libassimp.4.0.1.dylib */; };
 		06FF1AA71F4CB2FC00A5E41C /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 06FF1AA61F4CB2EB00A5E41C /* assets */; };
 		0986805A658140E1889A4ACC /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = C62C09A134EF4B5B92BC5205 /* CinderApp.icns */; };
 		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
@@ -49,6 +62,17 @@
 		06F4EB931F51D28800CDB933 /* Drawable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Drawable.h; sourceTree = "<group>"; };
 		06F4EB941F51D28800CDB933 /* Scene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
 		06F4EB951F51D28800CDB933 /* Scene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		06F4EDDB1F51EFCE00CDB933 /* libBullet3Dynamics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBullet3Dynamics.a; path = ../../blocks/bullet/lib/libBullet3Dynamics.a; sourceTree = "<group>"; };
+		06F4EDDC1F51EFCE00CDB933 /* libBullet2FileLoader.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBullet2FileLoader.a; path = ../../blocks/bullet/lib/libBullet2FileLoader.a; sourceTree = "<group>"; };
+		06F4EDDD1F51EFCE00CDB933 /* libBulletDynamics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletDynamics.a; path = ../../blocks/bullet/lib/libBulletDynamics.a; sourceTree = "<group>"; };
+		06F4EDDE1F51EFCE00CDB933 /* libBulletInverseDynamics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletInverseDynamics.a; path = ../../blocks/bullet/lib/libBulletInverseDynamics.a; sourceTree = "<group>"; };
+		06F4EDDF1F51EFCE00CDB933 /* libBulletCollision.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletCollision.a; path = ../../blocks/bullet/lib/libBulletCollision.a; sourceTree = "<group>"; };
+		06F4EDE01F51EFCF00CDB933 /* libLinearMath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLinearMath.a; path = ../../blocks/bullet/lib/libLinearMath.a; sourceTree = "<group>"; };
+		06F4EDE11F51EFCF00CDB933 /* libBullet3Collision.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBullet3Collision.a; path = ../../blocks/bullet/lib/libBullet3Collision.a; sourceTree = "<group>"; };
+		06F4EDE21F51EFCF00CDB933 /* libBullet3OpenCL_clew.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBullet3OpenCL_clew.a; path = ../../blocks/bullet/lib/libBullet3OpenCL_clew.a; sourceTree = "<group>"; };
+		06F4EDE31F51EFCF00CDB933 /* libBullet3Geometry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBullet3Geometry.a; path = ../../blocks/bullet/lib/libBullet3Geometry.a; sourceTree = "<group>"; };
+		06F4EDE41F51EFCF00CDB933 /* libBulletSoftBody.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletSoftBody.a; path = ../../blocks/bullet/lib/libBulletSoftBody.a; sourceTree = "<group>"; };
+		06F4EDE51F51EFCF00CDB933 /* libBullet3Common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBullet3Common.a; path = ../../blocks/bullet/lib/libBullet3Common.a; sourceTree = "<group>"; };
 		06FF1AA61F4CB2EB00A5E41C /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../assets; sourceTree = "<group>"; };
 		0D68A6C14DB14FEB9505853E /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -74,15 +98,28 @@
 			files = (
 				006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */,
 				006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */,
+				06F4EDFE1F51F1B300CDB933 /* libfmodex.dylib in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				06F4EDF81F51F1AA00CDB933 /* libBullet3OpenCL_clew.a in Frameworks */,
 				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
 				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				06F4EDF31F51F10100CDB933 /* libBullet3Geometry.a in Frameworks */,
 				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				06F4EDFB1F51F1AA00CDB933 /* libBulletInverseDynamics.a in Frameworks */,
+				06F4EDFA1F51F1AA00CDB933 /* libBulletDynamics.a in Frameworks */,
 				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				06F4EDFC1F51F1AA00CDB933 /* libBulletSoftBody.a in Frameworks */,
+				06F4EDFD1F51F1AA00CDB933 /* libLinearMath.a in Frameworks */,
 				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				06F4EDF51F51F1AA00CDB933 /* libBullet2FileLoader.a in Frameworks */,
 				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
 				00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */,
+				06F4EDFF1F51F1B300CDB933 /* libassimp.4.0.1.dylib in Frameworks */,
+				06F4EDF71F51F1AA00CDB933 /* libBullet3Common.a in Frameworks */,
+				06F4EDF91F51F1AA00CDB933 /* libBulletCollision.a in Frameworks */,
+				06F4EDF61F51F1AA00CDB933 /* libBullet3Collision.a in Frameworks */,
 				00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */,
+				06F4EDF41F51F19B00CDB933 /* libBullet3Dynamics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +129,17 @@
 		060B1FB51F4B818000EAE9C8 /* 3rd party */ = {
 			isa = PBXGroup;
 			children = (
+				06F4EDDC1F51EFCE00CDB933 /* libBullet2FileLoader.a */,
+				06F4EDE11F51EFCF00CDB933 /* libBullet3Collision.a */,
+				06F4EDE51F51EFCF00CDB933 /* libBullet3Common.a */,
+				06F4EDDB1F51EFCE00CDB933 /* libBullet3Dynamics.a */,
+				06F4EDE31F51EFCF00CDB933 /* libBullet3Geometry.a */,
+				06F4EDE21F51EFCF00CDB933 /* libBullet3OpenCL_clew.a */,
+				06F4EDDF1F51EFCE00CDB933 /* libBulletCollision.a */,
+				06F4EDDD1F51EFCE00CDB933 /* libBulletDynamics.a */,
+				06F4EDDE1F51EFCE00CDB933 /* libBulletInverseDynamics.a */,
+				06F4EDE41F51EFCF00CDB933 /* libBulletSoftBody.a */,
+				06F4EDE01F51EFCF00CDB933 /* libLinearMath.a */,
 				060B1FB61F4B818900EAE9C8 /* libfmodex.dylib */,
 				060B1FB71F4B819300EAE9C8 /* libassimp.4.0.1.dylib */,
 			);
@@ -300,14 +348,20 @@
 				HEADER_SEARCH_PATHS = (
 					"\"$(CINDER_PATH)/include\"",
 					"\"../blocks/assimp/include\"",
+					"\"../blocks/bullet/include\"",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../blocks/bullet/lib\"",
+					"\"$(SRCROOT)/../blocks/FMOD/lib/macosx\"",
+					"\"$(SRCROOT)/../blocks/assimp/lib\"",
+				);
 				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = CreativeEngine;
 				SYMROOT = ./build;
-				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/FMOD/include ../blocks/OSC/src";
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/FMOD/include ../blocks/OSC/src \"../blocks/bullet/include\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -332,15 +386,21 @@
 				HEADER_SEARCH_PATHS = (
 					"\"$(CINDER_PATH)/include\"",
 					"\"../blocks/assimp/include\"",
+					"\"../blocks/bullet/include\"",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../blocks/bullet/lib\"",
+					"\"$(SRCROOT)/../blocks/FMOD/lib/macosx\"",
+					"\"$(SRCROOT)/../blocks/assimp/lib\"",
+				);
 				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = CreativeEngine;
 				STRIP_INSTALLED_PRODUCT = YES;
 				SYMROOT = ./build;
-				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/FMOD/include ../blocks/OSC/src";
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include ../blocks/FMOD/include ../blocks/OSC/src \"../blocks/bullet/include\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
