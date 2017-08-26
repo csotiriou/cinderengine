@@ -16,13 +16,17 @@
 		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
 		00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995581B128DF400A5C623 /* IOKit.framework */; };
 		00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995591B128DF400A5C623 /* IOSurface.framework */; };
+		06F4EB961F51D29500CDB933 /* CreativeEngineApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06F4EB8E1F51D28800CDB933 /* CreativeEngineApp.cpp */; };
+		06F4EB971F51D29500CDB933 /* CreativeEngineDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 06F4EB8F1F51D28800CDB933 /* CreativeEngineDelegate.mm */; };
+		06F4EB981F51D29900CDB933 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F4EB901F51D28800CDB933 /* main.m */; };
+		06F4EB991F51D29C00CDB933 /* Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06F4EB921F51D28800CDB933 /* Drawable.cpp */; };
+		06F4EB9A1F51D29C00CDB933 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06F4EB941F51D28800CDB933 /* Scene.cpp */; };
 		06FF1AA71F4CB2FC00A5E41C /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 06FF1AA61F4CB2EB00A5E41C /* assets */; };
 		0986805A658140E1889A4ACC /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = C62C09A134EF4B5B92BC5205 /* CinderApp.icns */; };
-		4132E5A532E14BF7B09E16AE /* CreativeEngineApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 975EC86E5F00411ABE465DBE /* CreativeEngineApp.cpp */; };
 		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
-		70C1AB533F654F7EBDD820B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3A5737DD214004A6EA8339 /* main.m */; };
-		8290D27A89064FB99E157506 /* CreativeEngineDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0EE68565884944BF997BB6CB /* CreativeEngineDelegate.mm */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		916FC580D3DC3B9636379078 /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916FC046B453F07D41D8C195 /* MainScene.cpp */; };
+		916FC59BB849C916E42C6203 /* MainScene in Resources */ = {isa = PBXBuildFile; fileRef = 916FC61135BCEAC151965323 /* MainScene */; };
 		CC5D4114988D4D4EAD0C088B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1188F621AF14A99B56F5C53 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
@@ -38,17 +42,24 @@
 		00B995591B128DF400A5C623 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
 		060B1FB61F4B818900EAE9C8 /* libfmodex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmodex.dylib; path = ../../blocks/FMOD/lib/macosx/libfmodex.dylib; sourceTree = "<group>"; };
 		060B1FB71F4B819300EAE9C8 /* libassimp.4.0.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.4.0.1.dylib; path = ../../blocks/assimp/lib/libassimp.4.0.1.dylib; sourceTree = "<group>"; };
+		06F4EB8E1F51D28800CDB933 /* CreativeEngineApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CreativeEngineApp.cpp; sourceTree = "<group>"; };
+		06F4EB8F1F51D28800CDB933 /* CreativeEngineDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CreativeEngineDelegate.mm; sourceTree = "<group>"; };
+		06F4EB901F51D28800CDB933 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		06F4EB921F51D28800CDB933 /* Drawable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Drawable.cpp; sourceTree = "<group>"; };
+		06F4EB931F51D28800CDB933 /* Drawable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Drawable.h; sourceTree = "<group>"; };
+		06F4EB941F51D28800CDB933 /* Scene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
+		06F4EB951F51D28800CDB933 /* Scene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
 		06FF1AA61F4CB2EB00A5E41C /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../assets; sourceTree = "<group>"; };
 		0D68A6C14DB14FEB9505853E /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
-		0EE68565884944BF997BB6CB /* CreativeEngineDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = CreativeEngineDelegate.mm; path = ../src/CreativeEngineDelegate.mm; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		391C3F6A7A5F4406BF2753E5 /* CreativeEngine_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = CreativeEngine_Prefix.pch; sourceTree = "<group>"; };
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
-		7B3A5737DD214004A6EA8339 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = main.m; path = ../src/main.m; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* CreativeEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreativeEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		975EC86E5F00411ABE465DBE /* CreativeEngineApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = CreativeEngineApp.cpp; path = ../src/CreativeEngineApp.cpp; sourceTree = "<group>"; };
+		916FC046B453F07D41D8C195 /* MainScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MainScene.cpp; path = MainScene/MainScene.cpp; sourceTree = "<group>"; };
+		916FC61135BCEAC151965323 /* MainScene */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MainScene; sourceTree = "<group>"; };
+		916FC958BEE00E3151B5C03A /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScene.h; path = MainScene/MainScene.h; sourceTree = "<group>"; };
 		BC9B4FA7B2B94B6F9D3D13B6 /* CreativeEngineApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CreativeEngineApp.h; path = ../include/CreativeEngineApp.h; sourceTree = "<group>"; };
 		C62C09A134EF4B5B92BC5205 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
 		C6E66ED6FF2547A4BBE9FA4E /* CreativeEngineDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CreativeEngineDelegate.h; path = ../include/CreativeEngineDelegate.h; sourceTree = "<group>"; };
@@ -87,14 +98,30 @@
 			path = "3rd party";
 			sourceTree = "<group>";
 		};
-		080E96DDFE201D6D7F000001 /* Source */ = {
+		06F4EB8D1F51D28800CDB933 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				975EC86E5F00411ABE465DBE /* CreativeEngineApp.cpp */,
-				0EE68565884944BF997BB6CB /* CreativeEngineDelegate.mm */,
-				7B3A5737DD214004A6EA8339 /* main.m */,
+				06F4EB8E1F51D28800CDB933 /* CreativeEngineApp.cpp */,
+				06F4EB8F1F51D28800CDB933 /* CreativeEngineDelegate.mm */,
+				06F4EB901F51D28800CDB933 /* main.m */,
+				06F4EB911F51D28800CDB933 /* MainEngine */,
+				916FC61135BCEAC151965323 /* MainScene */,
+				916FC046B453F07D41D8C195 /* MainScene.cpp */,
+				916FC958BEE00E3151B5C03A /* MainScene.h */,
 			);
-			name = Source;
+			name = src;
+			path = ../src;
+			sourceTree = "<group>";
+		};
+		06F4EB911F51D28800CDB933 /* MainEngine */ = {
+			isa = PBXGroup;
+			children = (
+				06F4EB921F51D28800CDB933 /* Drawable.cpp */,
+				06F4EB931F51D28800CDB933 /* Drawable.h */,
+				06F4EB941F51D28800CDB933 /* Scene.cpp */,
+				06F4EB951F51D28800CDB933 /* Scene.h */,
+			);
+			path = MainEngine;
 			sourceTree = "<group>";
 		};
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
@@ -135,9 +162,9 @@
 		29B97314FDCFA39411CA2CEA /* CreativeEngine */ = {
 			isa = PBXGroup;
 			children = (
+				06F4EB8D1F51D28800CDB933 /* src */,
 				060B1FB51F4B818000EAE9C8 /* 3rd party */,
 				29B97315FDCFA39411CA2CEA /* Headers */,
-				080E96DDFE201D6D7F000001 /* Source */,
 				06FF1AA61F4CB2EB00A5E41C /* assets */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -231,6 +258,7 @@
 				06FF1AA71F4CB2FC00A5E41C /* assets in Resources */,
 				0986805A658140E1889A4ACC /* CinderApp.icns in Resources */,
 				CC5D4114988D4D4EAD0C088B /* MainMenu.xib in Resources */,
+				916FC59BB849C916E42C6203 /* MainScene in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,9 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4132E5A532E14BF7B09E16AE /* CreativeEngineApp.cpp in Sources */,
-				8290D27A89064FB99E157506 /* CreativeEngineDelegate.mm in Sources */,
-				70C1AB533F654F7EBDD820B2 /* main.m in Sources */,
+				06F4EB961F51D29500CDB933 /* CreativeEngineApp.cpp in Sources */,
+				06F4EB981F51D29900CDB933 /* main.m in Sources */,
+				06F4EB971F51D29500CDB933 /* CreativeEngineDelegate.mm in Sources */,
+				06F4EB9A1F51D29C00CDB933 /* Scene.cpp in Sources */,
+				06F4EB991F51D29C00CDB933 /* Drawable.cpp in Sources */,
+				916FC580D3DC3B9636379078 /* MainScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
