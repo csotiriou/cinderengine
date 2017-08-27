@@ -37,6 +37,7 @@
 		0986805A658140E1889A4ACC /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = C62C09A134EF4B5B92BC5205 /* CinderApp.icns */; };
 		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		916FC0F0A035BF0730BB94DA /* PhysicsEngineStorage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916FC9CAB36E57BF6161E490 /* PhysicsEngineStorage.cpp */; };
 		916FC580D3DC3B9636379078 /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916FC046B453F07D41D8C195 /* MainScene.cpp */; };
 		916FC59BB849C916E42C6203 /* MainScene in Resources */ = {isa = PBXBuildFile; fileRef = 916FC61135BCEAC151965323 /* MainScene */; };
 		916FC736F44A3AFBE39F448F /* PhysicsScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916FC044909F90225C479CE5 /* PhysicsScene.cpp */; };
@@ -84,9 +85,11 @@
 		8D1107320486CEB800E47090 /* CreativeEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreativeEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		916FC044909F90225C479CE5 /* PhysicsScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhysicsScene.cpp; sourceTree = "<group>"; };
 		916FC046B453F07D41D8C195 /* MainScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MainScene.cpp; path = MainScene/MainScene.cpp; sourceTree = "<group>"; };
+		916FC4886557CADA33A9F0D4 /* PhysicsEngineStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsEngineStorage.h; sourceTree = "<group>"; };
 		916FC61135BCEAC151965323 /* MainScene */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MainScene; sourceTree = "<group>"; };
 		916FC89D8A8C2E9BAD635C0A /* PhysicsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsScene.h; sourceTree = "<group>"; };
 		916FC958BEE00E3151B5C03A /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScene.h; path = MainScene/MainScene.h; sourceTree = "<group>"; };
+		916FC9CAB36E57BF6161E490 /* PhysicsEngineStorage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhysicsEngineStorage.cpp; sourceTree = "<group>"; };
 		916FCAAA2703D6D214E7C6C7 /* LevelScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelScene.cpp; sourceTree = "<group>"; };
 		916FCD8974BF6E12594AF082 /* LevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelScene.h; sourceTree = "<group>"; };
 		BC9B4FA7B2B94B6F9D3D13B6 /* CreativeEngineApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CreativeEngineApp.h; path = ../include/CreativeEngineApp.h; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 				06F4EB931F51D28800CDB933 /* Drawable.h */,
 				06F4EB941F51D28800CDB933 /* Scene.cpp */,
 				06F4EB951F51D28800CDB933 /* Scene.h */,
+				916FC9CAB36E57BF6161E490 /* PhysicsEngineStorage.cpp */,
+				916FC4886557CADA33A9F0D4 /* PhysicsEngineStorage.h */,
 			);
 			path = MainEngine;
 			sourceTree = "<group>";
@@ -341,6 +346,7 @@
 				916FC580D3DC3B9636379078 /* MainScene.cpp in Sources */,
 				916FC736F44A3AFBE39F448F /* PhysicsScene.cpp in Sources */,
 				916FCB9A3B97672420465303 /* LevelScene.cpp in Sources */,
+				916FC0F0A035BF0730BB94DA /* PhysicsEngineStorage.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +381,7 @@
 					"\"$(SRCROOT)/../blocks/FMOD/lib/macosx\"",
 					"\"$(SRCROOT)/../blocks/assimp/lib\"",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = CreativeEngine;
@@ -413,6 +420,7 @@
 					"\"$(SRCROOT)/../blocks/FMOD/lib/macosx\"",
 					"\"$(SRCROOT)/../blocks/assimp/lib\"",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = CreativeEngine;

@@ -10,20 +10,18 @@
 #include "LinearMath/btAlignedObjectArray.h"
 
 #include "Scene.h"
+#include "PhysicsEngineStorage.h"
+
+using std::make_shared;
+
 
 class LevelScene : public Scene {
     void createAllCubes();
     void createPlane();
 
-    btBoxShape* createBoxShape(const btVector3& halfExtents);
     btAlignedObjectArray<btCollisionShape*>	m_collisionShapes;
-    btRigidBody*	createRigidBody(float mass, const btTransform& startTransform, btCollisionShape* shape,  const btVector4& color = btVector4(1, 0, 0, 1));
 
-    btCollisionDispatcher* dispatcher;
-    btDefaultCollisionConfiguration* collisionConfiguration;
-    btDiscreteDynamicsWorld* dynamicsWorld;
-    btSequentialImpulseConstraintSolver* solver;
-    btBroadphaseInterface* overlappingPairCache;
+    std::shared_ptr<PhysicsEngineStorage *> physicsEngine;
 public:
     void setup() override;
 

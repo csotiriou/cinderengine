@@ -3,9 +3,6 @@
 //
 
 #include "PhysicsScene.h"
-#include "btBulletDynamicsCommon.h"
-#include "LinearMath/btVector3.h"
-#include "LinearMath/btAlignedObjectArray.h"
 
 void PhysicsScene::setup() {
     collisionConfiguration = new btDefaultCollisionConfiguration();
@@ -23,9 +20,6 @@ void PhysicsScene::setup() {
     //keep track of the shapes, we release memory at exit.
     //make sure to re-use collision shapes among rigid bodies whenever possible!
     btAlignedObjectArray<btCollisionShape*> collisionShapes;
-    
-    btCollisionShape* groundShape = new btBoxShape(btVector3(btScalar(50.),btScalar(50.),btScalar(50.)));
-
 }
 
 void PhysicsScene::draw() {

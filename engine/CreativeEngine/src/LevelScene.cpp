@@ -10,34 +10,20 @@ using namespace ci;
 using namespace ci::app;
 
 void LevelScene::setup() {
-    collisionConfiguration = new btDefaultCollisionConfiguration();
+    physicsEngine = std::make_shared<PhysicsEngineStorage*>(new PhysicsEngineStorage());
     
-    ///use the default collision dispatcher. For parallel processing you can use a diffent dispatcher (see Extras/BulletMultiThreaded)
-    dispatcher = new    btCollisionDispatcher(collisionConfiguration);
-    overlappingPairCache = new btDbvtBroadphase();
-    
-    ///the default constraint solver. For parallel processing you can use a different solver (see Extras/BulletMultiThreaded)
-    solver = new btSequentialImpulseConstraintSolver;
-    
-    dynamicsWorld = new btDiscreteDynamicsWorld(dispatcher,overlappingPairCache,solver,collisionConfiguration);
-    dynamicsWorld->setGravity(btVector3(0,-10,0));
+    (*physicsEngine)->setup();
 
-    createPlane();
+    (*physicsEngine)->createPlane();
     createAllCubes();
 }
 
 void LevelScene::draw() {
     
-    dynamicsWorld->stepSimulation((ci::app::getElapsedFrames() / ci::app::getElapsedSeconds()));
+    (*physicsEngine)->dynamicsWorld->stepSimulation((ci::app::getElapsedFrames() / ci::app::getElapsedSeconds()));
     
-    
-    
-    std::cout << this->drawables[0]->positionInWorld.x << " ";
-    std::cout << this->drawables[0]->positionInWorld.y << " ";
-    std::cout << this->drawables[0]->positionInWorld.z <<  "\n";
-
-    for (int i = 0; i< this->dynamicsWorld->getNumCollisionObjects(); i++) {
-        btCollisionObject* obj = this->dynamicsWorld->getCollisionObjectArray()[i];
+    for (int i = 0; i< (*physicsEngine)->dynamicsWorld->getNumCollisionObjects(); i++) {
+        btCollisionObject* obj = (*physicsEngine)->dynamicsWorld->getCollisionObjectArray()[i];
         btRigidBody* body = btRigidBody::upcast(obj);
         
         if (body && body->getMotionState()){
@@ -46,7 +32,6 @@ void LevelScene::draw() {
             
             
             void *userPointer = body->getUserPointer();
-            
             if (userPointer) {
                 btQuaternion orientation = trans.getRotation();
                 btVector3 origin = trans.getOrigin();
@@ -59,7 +44,6 @@ void LevelScene::draw() {
                 auto quat = glm::quat(orientation.getW(), glm::vec3(orientation.getX(), orientation.getY(), orientation.getZ()));
                 currentDrawable->rotationInWorld = glm::toMat4(quat);
             }
-
         }
     }
     
@@ -108,45 +92,10 @@ void LevelScene::createAllCubes() {
                 startTransform.setIdentity();
                 startTransform.setOrigin(btVector3(cubePosition.x, cubePosition.y,cubePosition.z));
 
-                auto newBody = createRigidBody(mass,startTransform,colShape);
+                auto newBody = (*physicsEngine)->registerRigidBody(mass, startTransform, colShape);
                 newBody->setUserPointer(newDrawable);
             }
         }
     }
-
-
 }
-
-void LevelScene::createPlane() {
-    btBoxShape* groundShape = createBoxShape(btVector3(btScalar(50.),btScalar(1.),btScalar(50.)));
-    m_collisionShapes.push_back(groundShape);
-    btTransform groundTransform;
-    groundTransform.setIdentity();
-    groundTransform.setOrigin(btVector3(0,-2,0));
-    btScalar mass(0.);
-    createRigidBody(mass,groundTransform,groundShape, btVector4(0,0,1,1));
-}
-
-btBoxShape *LevelScene::createBoxShape(const btVector3 &halfExtents) {
-    btBoxShape* box = new btBoxShape(halfExtents);
-    return box;
-}
-
-btRigidBody *LevelScene::createRigidBody(float mass, const btTransform &startTransform, btCollisionShape *shape, const btVector4 &color) {
-    //rigidbody is dynamic if and only if mass is non zero, otherwise static
-    
-
-    btVector3 localInertia(0, 0, 0);
-    shape->calculateLocalInertia(mass, localInertia);
-    btDefaultMotionState *myMotionState = new btDefaultMotionState(startTransform);
-
-    btRigidBody::btRigidBodyConstructionInfo cInfo(mass, myMotionState, shape, localInertia);
-
-    btRigidBody *body = new btRigidBody(cInfo);
-    body->setRestitution(btScalar(0.1));
-    body->setUserIndex(-1);
-    dynamicsWorld->addRigidBody(body);
-    return body;
-}
-
 
