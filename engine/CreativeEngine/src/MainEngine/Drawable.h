@@ -23,6 +23,7 @@ public:
 
     vec3 positionInWorld;
     mat4 rotationInWorld;
+    std::string name;
 
     Drawable(TriMeshRef trimesh, gl::GlslProgRef glslProgram, gl::TextureRef texture);
     void draw();
