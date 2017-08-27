@@ -20,19 +20,12 @@ public:
     gl::BatchRef        mBatch;
     gl::GlslProgRef    mGlsl;
     gl::TextureRef    mTexture;
-    cinder::quat        modelMatrix;
 
-    Drawable(TriMeshRef trimesh, gl::GlslProgRef glslProgram, gl::TextureRef texture) {
-        mGlsl = glslProgram;
-        mBatch = gl::Batch::create( *trimesh, mGlsl );
-        mTexture = texture;
-    }
+    vec3 positionInWorld;
+    mat4 rotationInWorld;
 
-    void draw() {
-        mTexture->bind( 0 );
-        mBatch->draw();
-        mTexture->unbind();
-    }
+    Drawable(TriMeshRef trimesh, gl::GlslProgRef glslProgram, gl::TextureRef texture);
+    void draw();
 };
 
 typedef std::shared_ptr<Drawable> DrawableRef;

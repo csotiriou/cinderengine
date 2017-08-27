@@ -39,6 +39,8 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		916FC580D3DC3B9636379078 /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916FC046B453F07D41D8C195 /* MainScene.cpp */; };
 		916FC59BB849C916E42C6203 /* MainScene in Resources */ = {isa = PBXBuildFile; fileRef = 916FC61135BCEAC151965323 /* MainScene */; };
+		916FC736F44A3AFBE39F448F /* PhysicsScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916FC044909F90225C479CE5 /* PhysicsScene.cpp */; };
+		916FCB9A3B97672420465303 /* LevelScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 916FCAAA2703D6D214E7C6C7 /* LevelScene.cpp */; };
 		CC5D4114988D4D4EAD0C088B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1188F621AF14A99B56F5C53 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
@@ -80,9 +82,13 @@
 		391C3F6A7A5F4406BF2753E5 /* CreativeEngine_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = CreativeEngine_Prefix.pch; sourceTree = "<group>"; };
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		8D1107320486CEB800E47090 /* CreativeEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreativeEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		916FC044909F90225C479CE5 /* PhysicsScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhysicsScene.cpp; sourceTree = "<group>"; };
 		916FC046B453F07D41D8C195 /* MainScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MainScene.cpp; path = MainScene/MainScene.cpp; sourceTree = "<group>"; };
 		916FC61135BCEAC151965323 /* MainScene */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MainScene; sourceTree = "<group>"; };
+		916FC89D8A8C2E9BAD635C0A /* PhysicsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsScene.h; sourceTree = "<group>"; };
 		916FC958BEE00E3151B5C03A /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScene.h; path = MainScene/MainScene.h; sourceTree = "<group>"; };
+		916FCAAA2703D6D214E7C6C7 /* LevelScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelScene.cpp; sourceTree = "<group>"; };
+		916FCD8974BF6E12594AF082 /* LevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelScene.h; sourceTree = "<group>"; };
 		BC9B4FA7B2B94B6F9D3D13B6 /* CreativeEngineApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CreativeEngineApp.h; path = ../include/CreativeEngineApp.h; sourceTree = "<group>"; };
 		C62C09A134EF4B5B92BC5205 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
 		C6E66ED6FF2547A4BBE9FA4E /* CreativeEngineDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CreativeEngineDelegate.h; path = ../include/CreativeEngineDelegate.h; sourceTree = "<group>"; };
@@ -154,6 +160,9 @@
 				916FC61135BCEAC151965323 /* MainScene */,
 				916FC046B453F07D41D8C195 /* MainScene.cpp */,
 				916FC958BEE00E3151B5C03A /* MainScene.h */,
+				916FC32E307ECB94BCFB7121 /* Physics Scene */,
+				916FCAAA2703D6D214E7C6C7 /* LevelScene.cpp */,
+				916FCD8974BF6E12594AF082 /* LevelScene.h */,
 			);
 			name = src;
 			path = ../src;
@@ -249,6 +258,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		916FC32E307ECB94BCFB7121 /* Physics Scene */ = {
+			isa = PBXGroup;
+			children = (
+				916FC044909F90225C479CE5 /* PhysicsScene.cpp */,
+				916FC89D8A8C2E9BAD635C0A /* PhysicsScene.h */,
+			);
+			path = "Physics Scene";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -321,6 +339,8 @@
 				06F4EB9A1F51D29C00CDB933 /* Scene.cpp in Sources */,
 				06F4EB991F51D29C00CDB933 /* Drawable.cpp in Sources */,
 				916FC580D3DC3B9636379078 /* MainScene.cpp in Sources */,
+				916FC736F44A3AFBE39F448F /* PhysicsScene.cpp in Sources */,
+				916FCB9A3B97672420465303 /* LevelScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

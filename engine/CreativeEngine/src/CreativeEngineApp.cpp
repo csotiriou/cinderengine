@@ -3,13 +3,14 @@
 #include "cinder/Sphere.h"
 #include <assimp/Importer.hpp>
 #include "MainScene.h"
+#include "LevelScene.h"
 
 using namespace ci;
 using namespace ci::app;
 
 void CreativeEngineApp::setup()
 {
-    currentScene.reset(new MainScene());
+    currentScene.reset(new LevelScene());
     currentScene->setup();
 }
 

@@ -30,7 +30,6 @@ void MainScene::draw() {
     auto plane = geom::Plane();
 
 
-
     auto identity = cinder::quat();
     auto rotation = cinder::rotate(identity, cinder::toRadians(spinAngle), vec3(0,1,0));
 

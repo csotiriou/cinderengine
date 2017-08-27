@@ -11,7 +11,7 @@
 class Scene {
 protected:
     cinder::vec3    mLightPosition;
-    std::vector<Drawable> drawables;
+    std::vector<DrawableRef> drawables;
 public:
     CameraPersp        mCam;
 
