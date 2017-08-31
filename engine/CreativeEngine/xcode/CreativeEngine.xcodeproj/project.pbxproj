@@ -16,6 +16,16 @@
 		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
 		00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995581B128DF400A5C623 /* IOKit.framework */; };
 		00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995591B128DF400A5C623 /* IOSurface.framework */; };
+		06311A5E1F58B2FB00C00E6A /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06DB46111F58AA3C00D3FFBA /* imgui.cpp */; };
+		06311A601F58B2FB00C00E6A /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06DB46131F58AA3C00D3FFBA /* imgui_demo.cpp */; };
+		06311A611F58B2FB00C00E6A /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06DB46141F58AA3C00D3FFBA /* imgui_draw.cpp */; };
+		06311A661F58B37E00C00E6A /* CinderImGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06DB461C1F58AA3C00D3FFBA /* CinderImGui.cpp */; };
+		06311A681F58B3C700C00E6A /* Cousine-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06DB46091F58AA3C00D3FFBA /* Cousine-Regular.ttf */; };
+		06311A691F58B3C700C00E6A /* DroidSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06DB460A1F58AA3C00D3FFBA /* DroidSans.ttf */; };
+		06311A6A1F58B3C700C00E6A /* Karla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06DB460B1F58AA3C00D3FFBA /* Karla-Regular.ttf */; };
+		06311A6B1F58B3C700C00E6A /* ProggyClean.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06DB460C1F58AA3C00D3FFBA /* ProggyClean.ttf */; };
+		06311A6C1F58B3C700C00E6A /* ProggyTiny.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06DB460D1F58AA3C00D3FFBA /* ProggyTiny.ttf */; };
+		06311A6D1F58B3C700C00E6A /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06DB460F1F58AA3C00D3FFBA /* Roboto-Medium.ttf */; };
 		06F4EB961F51D29500CDB933 /* CreativeEngineApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06F4EB8E1F51D28800CDB933 /* CreativeEngineApp.cpp */; };
 		06F4EB971F51D29500CDB933 /* CreativeEngineDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 06F4EB8F1F51D28800CDB933 /* CreativeEngineDelegate.mm */; };
 		06F4EB981F51D29900CDB933 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F4EB901F51D28800CDB933 /* main.m */; };
@@ -57,6 +67,27 @@
 		00B995591B128DF400A5C623 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
 		060B1FB61F4B818900EAE9C8 /* libfmodex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmodex.dylib; path = ../../blocks/FMOD/lib/macosx/libfmodex.dylib; sourceTree = "<group>"; };
 		060B1FB71F4B819300EAE9C8 /* libassimp.4.0.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.4.0.1.dylib; path = ../../blocks/assimp/lib/libassimp.4.0.1.dylib; sourceTree = "<group>"; };
+		06DB46041F58AA3C00D3FFBA /* CinderImGui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CinderImGui.h; sourceTree = "<group>"; };
+		06DB46081F58AA3C00D3FFBA /* binary_to_compressed_c.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = binary_to_compressed_c.cpp; sourceTree = "<group>"; };
+		06DB46091F58AA3C00D3FFBA /* Cousine-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cousine-Regular.ttf"; sourceTree = "<group>"; };
+		06DB460A1F58AA3C00D3FFBA /* DroidSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DroidSans.ttf; sourceTree = "<group>"; };
+		06DB460B1F58AA3C00D3FFBA /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Regular.ttf"; sourceTree = "<group>"; };
+		06DB460C1F58AA3C00D3FFBA /* ProggyClean.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProggyClean.ttf; sourceTree = "<group>"; };
+		06DB460D1F58AA3C00D3FFBA /* ProggyTiny.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProggyTiny.ttf; sourceTree = "<group>"; };
+		06DB460E1F58AA3C00D3FFBA /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		06DB460F1F58AA3C00D3FFBA /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		06DB46101F58AA3C00D3FFBA /* imconfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imconfig.h; sourceTree = "<group>"; };
+		06DB46111F58AA3C00D3FFBA /* imgui.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = imgui.cpp; sourceTree = "<group>"; };
+		06DB46121F58AA3C00D3FFBA /* imgui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imgui.h; sourceTree = "<group>"; };
+		06DB46131F58AA3C00D3FFBA /* imgui_demo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_demo.cpp; sourceTree = "<group>"; };
+		06DB46141F58AA3C00D3FFBA /* imgui_draw.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_draw.cpp; sourceTree = "<group>"; };
+		06DB46151F58AA3C00D3FFBA /* imgui_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imgui_internal.h; sourceTree = "<group>"; };
+		06DB46161F58AA3C00D3FFBA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		06DB46171F58AA3C00D3FFBA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		06DB46181F58AA3C00D3FFBA /* stb_rect_pack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_rect_pack.h; sourceTree = "<group>"; };
+		06DB46191F58AA3C00D3FFBA /* stb_textedit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_textedit.h; sourceTree = "<group>"; };
+		06DB461A1F58AA3C00D3FFBA /* stb_truetype.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_truetype.h; sourceTree = "<group>"; };
+		06DB461C1F58AA3C00D3FFBA /* CinderImGui.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CinderImGui.cpp; sourceTree = "<group>"; };
 		06F4EB8E1F51D28800CDB933 /* CreativeEngineApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CreativeEngineApp.cpp; sourceTree = "<group>"; };
 		06F4EB8F1F51D28800CDB933 /* CreativeEngineDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CreativeEngineDelegate.mm; sourceTree = "<group>"; };
 		06F4EB901F51D28800CDB933 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -136,6 +167,7 @@
 		060B1FB51F4B818000EAE9C8 /* 3rd party */ = {
 			isa = PBXGroup;
 			children = (
+				06DB46021F58AA3C00D3FFBA /* ImGui */,
 				06F4EDDC1F51EFCE00CDB933 /* libBullet2FileLoader.a */,
 				06F4EDE11F51EFCF00CDB933 /* libBullet3Collision.a */,
 				06F4EDE51F51EFCF00CDB933 /* libBullet3Common.a */,
@@ -151,6 +183,75 @@
 				060B1FB71F4B819300EAE9C8 /* libassimp.4.0.1.dylib */,
 			);
 			path = "3rd party";
+			sourceTree = "<group>";
+		};
+		06DB46021F58AA3C00D3FFBA /* ImGui */ = {
+			isa = PBXGroup;
+			children = (
+				06DB46031F58AA3C00D3FFBA /* include */,
+				06DB46051F58AA3C00D3FFBA /* lib */,
+				06DB461B1F58AA3C00D3FFBA /* src */,
+			);
+			name = ImGui;
+			path = ../../blocks/ImGui;
+			sourceTree = "<group>";
+		};
+		06DB46031F58AA3C00D3FFBA /* include */ = {
+			isa = PBXGroup;
+			children = (
+				06DB46041F58AA3C00D3FFBA /* CinderImGui.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		06DB46051F58AA3C00D3FFBA /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				06DB46061F58AA3C00D3FFBA /* imgui */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		06DB46061F58AA3C00D3FFBA /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				06DB46071F58AA3C00D3FFBA /* extra_fonts */,
+				06DB46101F58AA3C00D3FFBA /* imconfig.h */,
+				06DB46111F58AA3C00D3FFBA /* imgui.cpp */,
+				06DB46121F58AA3C00D3FFBA /* imgui.h */,
+				06DB46131F58AA3C00D3FFBA /* imgui_demo.cpp */,
+				06DB46141F58AA3C00D3FFBA /* imgui_draw.cpp */,
+				06DB46151F58AA3C00D3FFBA /* imgui_internal.h */,
+				06DB46161F58AA3C00D3FFBA /* LICENSE */,
+				06DB46171F58AA3C00D3FFBA /* README.md */,
+				06DB46181F58AA3C00D3FFBA /* stb_rect_pack.h */,
+				06DB46191F58AA3C00D3FFBA /* stb_textedit.h */,
+				06DB461A1F58AA3C00D3FFBA /* stb_truetype.h */,
+			);
+			path = imgui;
+			sourceTree = "<group>";
+		};
+		06DB46071F58AA3C00D3FFBA /* extra_fonts */ = {
+			isa = PBXGroup;
+			children = (
+				06DB46081F58AA3C00D3FFBA /* binary_to_compressed_c.cpp */,
+				06DB46091F58AA3C00D3FFBA /* Cousine-Regular.ttf */,
+				06DB460A1F58AA3C00D3FFBA /* DroidSans.ttf */,
+				06DB460B1F58AA3C00D3FFBA /* Karla-Regular.ttf */,
+				06DB460C1F58AA3C00D3FFBA /* ProggyClean.ttf */,
+				06DB460D1F58AA3C00D3FFBA /* ProggyTiny.ttf */,
+				06DB460E1F58AA3C00D3FFBA /* README.txt */,
+				06DB460F1F58AA3C00D3FFBA /* Roboto-Medium.ttf */,
+			);
+			path = extra_fonts;
+			sourceTree = "<group>";
+		};
+		06DB461B1F58AA3C00D3FFBA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				06DB461C1F58AA3C00D3FFBA /* CinderImGui.cpp */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		06F4EB8D1F51D28800CDB933 /* src */ = {
@@ -324,9 +425,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06311A6D1F58B3C700C00E6A /* Roboto-Medium.ttf in Resources */,
 				06FF1AA71F4CB2FC00A5E41C /* assets in Resources */,
 				0986805A658140E1889A4ACC /* CinderApp.icns in Resources */,
+				06311A6C1F58B3C700C00E6A /* ProggyTiny.ttf in Resources */,
+				06311A691F58B3C700C00E6A /* DroidSans.ttf in Resources */,
+				06311A681F58B3C700C00E6A /* Cousine-Regular.ttf in Resources */,
+				06311A6A1F58B3C700C00E6A /* Karla-Regular.ttf in Resources */,
 				CC5D4114988D4D4EAD0C088B /* MainMenu.xib in Resources */,
+				06311A6B1F58B3C700C00E6A /* ProggyClean.ttf in Resources */,
 				916FC59BB849C916E42C6203 /* MainScene in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +445,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06311A661F58B37E00C00E6A /* CinderImGui.cpp in Sources */,
+				06311A5E1F58B2FB00C00E6A /* imgui.cpp in Sources */,
+				06311A601F58B2FB00C00E6A /* imgui_demo.cpp in Sources */,
+				06311A611F58B2FB00C00E6A /* imgui_draw.cpp in Sources */,
 				06F4EB961F51D29500CDB933 /* CreativeEngineApp.cpp in Sources */,
 				06F4EB981F51D29900CDB933 /* main.m in Sources */,
 				06F4EB971F51D29500CDB933 /* CreativeEngineDelegate.mm in Sources */,

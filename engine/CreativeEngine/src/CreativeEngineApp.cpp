@@ -4,14 +4,17 @@
 #include <assimp/Importer.hpp>
 #include "MainScene.h"
 #include "LevelScene.h"
+#include "CinderImGui.h"
 
 using namespace ci;
 using namespace ci::app;
 
 void CreativeEngineApp::setup()
 {
+    ImGui::initialize();
     currentScene.reset(new LevelScene());
     currentScene->setup();
+    gl::enableVerticalSync(false);
 }
 
 void CreativeEngineApp::draw()
@@ -23,6 +26,7 @@ void CreativeEngineApp::draw()
     
     gl::setMatrices( currentScene->mCam );
     this->currentScene->draw();
+    ui::Text("fps: %f", getAverageFps());
 }
 
 void CreativeEngineApp::resize() {

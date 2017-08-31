@@ -1,6 +1,7 @@
 #include "cinder/Cinder.h"
 #include "cinder/Rand.h"
 #import "CreativeEngineDelegate.h"
+#import "CinderImGui.h"
 
 @implementation CreativeEngineDelegate
 
@@ -14,7 +15,11 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 	cinder::app::AppBase::Settings settings;
-	cinder::app::RendererRef renderer( new cinder::app::RendererGl );
+    auto openGLOptions = cinder::app::RendererGl::Options();
+    openGLOptions.msaa(16);
+    
+    
+	cinder::app::RendererRef renderer( new cinder::app::RendererGl(openGLOptions) );
 	CreativeEngineApp::initialize(&settings, renderer);
 
 	mApp = new CreativeEngineApp;
