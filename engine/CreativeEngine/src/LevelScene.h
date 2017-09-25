@@ -22,6 +22,8 @@ class LevelScene : public Scene {
     btAlignedObjectArray<btCollisionShape*>	m_collisionShapes;
 
     std::shared_ptr<PhysicsEngineStorage *> physicsEngine;
+    
+    int userInputSlider = 1;
 public:
     void setup() override;
 

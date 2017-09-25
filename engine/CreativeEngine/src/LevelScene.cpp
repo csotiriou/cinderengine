@@ -5,12 +5,16 @@
 #include "LevelScene.h"
 #include "cinder/gl/gl.h"
 #include "cinder/app/App.h"
+#include "CinderImGui.h"
+
 
 using namespace ci;
 using namespace ci::app;
 
 void LevelScene::setup() {
     physicsEngine = std::make_shared<PhysicsEngineStorage*>(new PhysicsEngineStorage());
+    
+    
     
     (*physicsEngine)->setup();
 
@@ -50,6 +54,8 @@ void LevelScene::draw() {
     for (auto &d : this->drawables) {
         d->draw();
     }
+    ui::Text("number of objects: %lu", this->drawables.size());
+    
 }
 
 void LevelScene::onResize() {
@@ -58,9 +64,11 @@ void LevelScene::onResize() {
 }
 
 void LevelScene::createAllCubes() {
+    auto cubeSize = vec3(1.0,1.0,1.0);
+    
     auto texture = gl::Texture::create( ip::checkerboard( 512, 512, 32 ) );
     auto glslDefault = gl::GlslProg::create( loadAsset( "shader.vert" ), loadAsset( "shader.frag" ) );
-
+    auto cubeMesh = TriMesh::create(geom::Cube().size(cubeSize));
     auto pointVector = std::vector<vec3>();
 
     int numberOfCubesPerSide = 10;
@@ -69,10 +77,10 @@ void LevelScene::createAllCubes() {
     for (int i = 0; i < numberOfCubesPerSide; i++) {
         for (int j = 0; j < numberOfCubesPerSide; j++) {
             for (int z = 0; z < numberOfCubesPerSide; z++) {
-                auto cubeSize = vec3(1.0,1.0,1.0);
+                
                 auto cubePosition = vec3(i, j + yOffset, z);
 
-                auto cubeMesh = TriMesh::create(geom::Cube().size(cubeSize));
+                
                 auto newDrawable = new Drawable(cubeMesh, glslDefault, texture);
                 auto newDrawableRef = DrawableRef(newDrawable);
                 newDrawableRef->positionInWorld = cubePosition;
